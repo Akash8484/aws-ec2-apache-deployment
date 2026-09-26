@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Akash Thakur — Cloud & DevOps portfolio. Building resilient, automated cloud platforms." />
+    <meta name="theme-color" content="#07111f" />
+    <title>Akash Thakur | Cloud & DevOps Engineer</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Akash Thakur home">
+        <span class="brand-mark">AT</span>
+        <span>AKASH / CLOUD</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#approach">Approach</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="theme-toggle" aria-label="Toggle color theme" title="Toggle color theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" /></svg>
+        </button>
+        <a class="button button-small" href="#contact">Let’s connect <span>↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span> Available for cloud & platform roles</div>
+          <h1>Systems that <em>scale</em>.<br />Delivery that doesn’t drift.</h1>
+          <p class="hero-lede">I’m <strong>Akash Thakur</strong>, a cloud and DevOps-focused builder turning infrastructure into reliable, observable products—with automation at the core.</p>
+          <div class="hero-actions">
+            <a class="button" href="#work">Explore my work <span>↓</span></a>
+            <button class="text-button" id="copy-profile">Copy profile link <span class="copy-symbol">⧉</span></button>
+          </div>
+          <div class="proof-row" aria-label="Key working principles">
+            <div><strong>IaC first</strong><span>repeatable environments</span></div>
+            <div><strong>Secure by default</strong><span>least-privilege thinking</span></div>
+            <div><strong>Measure everything</strong><span>actionable signals</span></div>
+          </div>
+        </div>
+
+        <div class="architecture-card reveal reveal-delay" aria-label="Interactive cloud delivery architecture illustration">
+          <div class="card-topline"><span>LIVE SYSTEM MAP</span><span class="ping">● HEALTHY</span></div>
+          <div class="architecture" id="architecture">
+            <div class="arch-line line-one"></div><div class="arch-line line-two"></div><div class="arch-line line-three"></div>
+            <button class="node node-source active" data-node="Source control"><span class="node-icon">⌘</span><b>Source</b><small>Git workflow</small></button>
+            <button class="node node-pipeline" data-node="Automated pipeline"><span class="node-icon">↯</span><b>Pipeline</b><small>CI/CD checks</small></button>
+            <button class="node node-cloud" data-node="AWS platform"><span class="node-icon">☁</span><b>AWS</b><small>Cloud runtime</small></button>
+            <button class="node node-observe" data-node="Observability"><span class="node-icon">◉</span><b>Observe</b><small>Metrics & alerts</small></button>
+            <div class="packet packet-a"></div><div class="packet packet-b"></div><div class="packet packet-c"></div>
+          </div>
+          <p class="node-caption" id="node-caption">Source control → every infrastructure change is reviewed, traceable, and deployable.</p>
+          <div class="metric-strip"><span><i></i> Deployment-ready</span><span>99.9% target SLO</span></div>
+        </div>
+      </section>
+
+      <section class="signal-band" aria-label="Technology highlights">
+        <div class="ticker-track"><span>AWS</span><i>✦</i><span>TERRAFORM</span><i>✦</i><span>DOCKER</span><i>✦</i><span>KUBERNETES</span><i>✦</i><span>GITHUB ACTIONS</span><i>✦</i><span>LINUX</span><i>✦</i><span>MONITORING</span><i>✦</i><span>AWS</span><i>✦</i><span>TERRAFORM</span><i>✦</i><span>DOCKER</span><i>✦</i><span>KUBERNETES</span><i>✦</i></div>
+      </section>
+
+      <section class="section-shell section-block" id="work">
+        <div class="section-heading reveal">
+          <div><span class="section-number">01 / SELECTED WORK</span><h2>Projects built like<br />production matters.</h2></div>
+          <p>Each project is framed around the things a team needs to trust: a clear problem, deliberate trade-offs, and evidence that it runs.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project project-featured reveal">
+            <div class="project-visual deployment-visual">
+              <div class="terminal-bar"><span></span><span></span><span></span><b>deploy-prod</b></div>
+              <div class="terminal-lines"><p><span>$</span> terraform plan</p><p class="success">✓ 24 resources planned</p><p><span>$</span> deploy --environment production</p><p class="success">✓ rollout complete <i>32s</i></p></div>
+              <div class="visual-badge">AWS • TERRAFORM • CI/CD</div>
+            </div>
+            <div class="project-content">
+              <div class="project-label">01 — CLOUD FOUNDATION</div>
+              <h3>Production-ready AWS landing zone</h3>
+              <p>A repeatable multi-tier foundation designed for a secure application deployment—from network boundaries through application delivery and telemetry.</p>
+              <div class="outcomes"><span>Infrastructure as code</span><span>Environment parity</span><span>Audit-friendly changes</span></div>
+              <button class="project-toggle" aria-expanded="false">See implementation details <span>+</span></button>
+              <div class="project-details"><p><b>Architecture:</b> VPC segmentation, IAM roles, load balancing, container-ready workloads, and CloudWatch-based observability. Provisioned declaratively so staging and production follow the same contract.</p></div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-visual reliability-visual">
+              <div class="ring ring-one"></div><div class="ring ring-two"></div><div class="ring-core">99.9<small>SLO</small></div>
+              <div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-label">02 — OBSERVABILITY</div>
+              <h3>Signals before symptoms</h3>
+              <p>A monitoring approach that connects service health, deployment events, and meaningful alert thresholds.</p>
+              <div class="outcomes"><span>Actionable alerts</span><span>Faster diagnosis</span></div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-visual automation-visual">
+              <div class="flow-step done">commit <b>✓</b></div><div class="flow-arrow">→</div><div class="flow-step done">test <b>✓</b></div><div class="flow-arrow">→</div><div class="flow-step active-step">ship <b>↗</b></div>
+            </div>
+            <div class="project-content">
+              <div class="project-label">03 — DELIVERY AUTOMATION</div>
+              <h3>Safe, boring releases</h3>
+              <p>A CI/CD mindset where validation happens early and each release remains transparent and reversible.</p>
+              <div class="outcomes"><span>Automated gates</span><span>Traceable delivery</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell section-block capabilities" id="capabilities">
+        <div class="section-heading reveal"><div><span class="section-number">02 / CAPABILITIES</span><h2>Tools are easy.<br /><em>Judgment</em> is the craft.</h2></div></div>
+        <div class="capability-layout">
+          <div class="capability-tabs reveal" role="tablist" aria-label="Capability categories">
+            <button class="capability-tab selected" role="tab" aria-selected="true" data-capability="cloud"><span>01</span> Cloud architecture <i>→</i></button>
+            <button class="capability-tab" role="tab" aria-selected="false" data-capability="delivery"><span>02</span> Delivery systems <i>→</i></button>
+            <button class="capability-tab" role="tab" aria-selected="false" data-capability="reliability"><span>03</span> Reliability & security <i>→</i></button>
+          </div>
+          <div class="capability-panel reveal" id="capability-panel">
+            <div class="panel-index">01</div><h3>Cloud architecture</h3><p>Designing clear foundations that let teams move quickly without turning every deployment into a risk event.</p>
+            <ul><li><span>AWS</span> VPC, IAM, EC2, S3, RDS, ECS, Lambda, CloudWatch</li><li><span>IaC</span> Terraform modules and repeatable environments</li><li><span>Design</span> Network boundaries, availability, cost-aware choices</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="approach-section" id="approach">
+        <div class="section-shell">
+          <div class="section-heading light-heading reveal"><div><span class="section-number">03 / HOW I WORK</span><h2>Good infrastructure<br />is a team sport.</h2></div><p>I focus on the habits that make a platform easier to operate, change, and hand over—not merely impressive in a diagram.</p></div>
+          <div class="principles-grid">
+            <article class="principle reveal"><span>01</span><h3>Start with the failure mode</h3><p>Before choosing a tool, I ask what can break, who notices, and how we recover.</p></article>
+            <article class="principle reveal"><span>02</span><h3>Make the safe path the easy path</h3><p>Automation, guardrails, and documentation should reduce cognitive load—not create it.</p></article>
+            <article class="principle reveal"><span>03</span><h3>Communicate in evidence</h3><p>Clear runbooks, visible delivery status, and metrics turn technical work into shared confidence.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-block contact" id="contact">
+        <div class="contact-grid reveal">
+          <div><span class="section-number">04 / LET’S BUILD</span><h2>Looking for someone who cares about the <em>last mile?</em></h2><p>I’m ready to bring a practical, automation-first mindset to a cloud or DevOps team.</p></div>
+          <div class="contact-card">
+            <span class="status-dot"></span><p>Open to opportunities</p><h3>Akash Thakur</h3>
+            <button class="button contact-button" id="email-button" data-email="akash.thakur.devops@example.com">Copy email address <span>⧉</span></button>
+            <small>Replace the email address in <code>script.js</code> before publishing.</small>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell"><span>© <span id="year"></span> Akash Thakur</span><span>Designed with intent. Built for the cloud.</span><a href="#top">Back to top ↑</a></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
